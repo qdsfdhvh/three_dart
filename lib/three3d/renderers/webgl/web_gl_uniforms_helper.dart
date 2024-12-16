@@ -114,7 +114,7 @@ class PureArrayUniform with WebGLUniformsHelper {
   }
 }
 
-class WebGLUniform {
+mixin class WebGLUniform {
   late List seq;
   late Map map;
 }
@@ -201,7 +201,7 @@ void parseUniform(activeInfo, addr, WebGLUniform container) {
   }
 }
 
-class WebGLUniformsHelper {
+mixin class WebGLUniformsHelper {
   // Flattening for arrays of vectors and matrices
   // id 类型  string || int
   late dynamic id;
